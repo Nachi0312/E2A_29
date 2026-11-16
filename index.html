@@ -75,14 +75,15 @@
       color: var(--ink);
       background: #e6eddb;
     }
-    .hero-content { width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 68px 0 76px; }
+    .hero-content { position: relative; z-index: 1; width: min(1180px, calc(100% - 64px)); margin: 0 auto; padding: 68px 46% 76px 0; }
     .eyebrow { display: flex; align-items: center; gap: 12px; margin: 0 0 21px; font: 11px "DM Sans", sans-serif; letter-spacing: 2px; text-transform: uppercase; }
     .eyebrow::before { content: ""; width: 28px; height: 1px; background: var(--green); }
-    .hero h1 { margin: 0; font: 600 76px/1.35 var(--serif); letter-spacing: .04em; }
+    .hero h1 { margin: 0; font: 600 clamp(54px, 6.4vw, 76px)/1.35 var(--serif); letter-spacing: .04em; }
     .hero-lead { margin: 23px 0 31px; font-size: 15px; line-height: 2.1; letter-spacing: .04em; }
     .hero-link { display: inline-flex; gap: 18px; align-items: center; padding-bottom: 8px; border-bottom: 1px solid rgba(29,49,41,.45); text-decoration: none; font-size: 13px; }
     .hero-link span { color: var(--coral); font: 18px "DM Sans", sans-serif; transition: transform .2s ease; }
     .hero-link:hover span { transform: translateX(4px); }
+    .hero-art { position: absolute; top: 50%; right: 4%; width: min(48%, 560px); height: auto; transform: translateY(-50%); }
     .hero-note { position: absolute; right: 5.2%; bottom: 30px; font: 10px "DM Sans", sans-serif; letter-spacing: 1px; }
     .hero-side { position: absolute; right: 5.2%; top: 50%; writing-mode: vertical-rl; transform: translateY(-50%); font: 10px "DM Sans", sans-serif; letter-spacing: 3px; }
 
@@ -162,6 +163,7 @@
       .hero-content { width: calc(100% - 40px); padding: 55px 0 62px; }
       .hero h1 { font-size: 53px; }
       .hero-lead { font-size: 13px; }
+      .hero-art { display: none; }
       .hero-side { display: none; }
       .hero-note { right: 20px; bottom: 17px; font-size: 9px; }
       .intro { padding: 73px 0 68px; }
@@ -224,6 +226,21 @@
         <p class="hero-lead">東京のすぐとなりに、深呼吸したくなる風景がある。<br>海辺を歩いて、緑に寄り道して、旬を味わう。<br>今日は船橋を、いつもよりゆっくり。</p>
         <a class="hero-link" href="#discover">船橋の楽しみを見つける <span aria-hidden="true">→</span></a>
       </div>
+      <svg class="hero-art" viewBox="0 0 560 440" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="286" cy="220" r="190" fill="#F4F4E9"/>
+        <circle cx="400" cy="112" r="38" fill="#D7ED71"/>
+        <path d="M92 235C147 173 204 181 254 224C306 269 370 255 463 177" stroke="#A8B99B" stroke-width="2"/>
+        <path d="M72 258C139 202 205 210 261 253C316 296 381 282 480 204" stroke="#A8B99B" stroke-width="2"/>
+        <path d="M63 276C129 221 202 231 269 278C327 319 393 304 491 229" stroke="#A8B99B" stroke-width="2"/>
+        <path d="M105 277C147 227 203 225 254 263C303 300 346 320 416 285C447 269 469 247 489 226V358H105V277Z" fill="#9EB99A"/>
+        <path d="M105 308C163 286 208 293 256 320C307 349 355 351 416 322C446 308 469 292 489 271V358H105V308Z" fill="#245C43"/>
+        <path d="M105 337C171 320 214 328 266 345C316 361 367 362 423 343C450 334 471 324 489 310V358H105V337Z" fill="#D7ED71"/>
+        <path d="M144 330C167 326 187 327 208 333" stroke="#F6F7EF" stroke-width="2" stroke-linecap="round"/>
+        <path d="M355 335C376 331 397 326 416 317" stroke="#F6F7EF" stroke-width="2" stroke-linecap="round"/>
+        <path d="M192 162V127M181 143L192 127L203 143" stroke="#245C43" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="192" cy="117" r="4" fill="#E77961"/>
+        <text x="114" y="389" fill="#245C43" font-family="DM Sans, sans-serif" font-size="11" letter-spacing="3">TOKYO BAY · FUNABASHI</text>
+      </svg>
       <span class="hero-side" aria-hidden="true">CHIBA · JAPAN · 35°41′N</span>
       <span class="hero-note">FUNABASHI · CHIBA</span>
     </section>
