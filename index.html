@@ -343,9 +343,22 @@
               <svg class="place-art" viewBox="0 0 170 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="108" cy="120" rx="53" ry="17" fill="#E77961"/>
                 <ellipse cx="108" cy="116" rx="43" ry="12" fill="#F6F7EF"/>
-                <path d="M91 109C82 96 85 81 96 67C103 58 105 48 105 41C112 46 116 53 116 62C131 73 135 91 125 105C117 116 101 117 91 109Z" fill="#D7ED71" stroke="#245C43" stroke-width="2"/>
-                <path d="M106 47C108 39 114 34 122 33M112 48C120 43 127 43 132 46" stroke="#245C43" stroke-width="2" stroke-linecap="round"/>
-                <path d="M103 81C100 89 101 96 106 101" stroke="#F6F7EF" stroke-width="2" stroke-linecap="round"/>
+                <defs>
+                  <linearGradient id="pear-skin" x1="87" y1="58" x2="130" y2="107" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#D7ED71"/>
+                    <stop offset="1" stop-color="#B8C95A"/>
+                  </linearGradient>
+                </defs>
+                <path d="M108 48C112 53 113 58 112 62C127 65 136 78 135 91C134 105 122 113 108 113C94 113 82 104 81 91C80 78 89 66 103 62C102 57 104 52 108 48Z" fill="url(#pear-skin)" stroke="#245C43" stroke-width="2"/>
+                <path d="M108 52C109 45 113 40 119 37" stroke="#76543A" stroke-width="3" stroke-linecap="round"/>
+                <path d="M109 54C115 49 122 48 128 51" stroke="#245C43" stroke-width="1.5" stroke-linecap="round"/>
+                <g fill="#8F8B4E" opacity=".65">
+                  <circle cx="92" cy="78" r="1.2"/><circle cx="102" cy="72" r="1"/><circle cx="120" cy="73" r="1.2"/>
+                  <circle cx="87" cy="89" r="1"/><circle cx="98" cy="85" r="1.2"/><circle cx="113" cy="82" r="1"/>
+                  <circle cx="127" cy="88" r="1.2"/><circle cx="92" cy="99" r="1.2"/><circle cx="105" cy="104" r="1"/>
+                  <circle cx="119" cy="99" r="1.1"/><circle cx="111" cy="92" r="1.1"/>
+                </g>
+                <path d="M91 76C87 84 87 91 90 96" stroke="#F6F7EF" stroke-width="2" stroke-linecap="round" opacity=".8"/>
               </svg>
             </div>
             <div class="place-meta"><span>03 / Local taste</span><span>船橋の食</span></div>
